@@ -7,6 +7,7 @@ name: AEE-Lab
 description: 专注单片机与嵌入式方向，在软硬件之间探索、实践与创造。
 url: "https://dan66666.github.io"
 baseurl: "/aee_lab"
+copyright_url: "https://dan66666.github.io/aee_lab/"
 repository: "DAN66666/aee_lab"
 
 remote_theme: mmistakes/minimal-mistakes@4.28.1
