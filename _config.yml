@@ -1,0 +1,91 @@
+# 网站名称、简介和联系方式可在此修改。
+# 已按 DAN66666/aee_lab 配置；更换账号或仓库名时同步修改 url/baseurl/repository。
+locale: zh-CN
+title: AEE-Lab
+subtitle: 汽车能源电子实验室
+name: AEE-Lab
+description: 专注单片机与嵌入式方向，在软硬件之间探索、实践与创造。
+url: "https://dan66666.github.io"
+baseurl: "/aee_lab"
+repository: "DAN66666/aee_lab"
+
+remote_theme: mmistakes/minimal-mistakes@4.28.1
+minimal_mistakes_skin: default
+logo: /assets/images/aee-logo.png
+masthead_title: AEE-Lab
+timezone: Asia/Shanghai
+encoding: utf-8
+markdown: kramdown
+permalink: /news/:year/:month/:day/:title/
+breadcrumbs: false
+search: true
+search_full_content: true
+search_provider: lunr
+atom_feed:
+  hide: false
+
+author:
+  name: AEE-Lab
+  avatar: /assets/images/aee-logo.png
+  bio: 汽车能源电子实验室
+  location: 福州大学车辆工程实验楼
+  links:
+    - label: 联系我们
+      icon: fas fa-fw fa-envelope
+      url: mailto:liuwenxinghjh@163.com
+
+footer:
+  since: "2026"
+  links:
+    - label: 联系我们
+      icon: fas fa-fw fa-envelope
+      url: mailto:liuwenxinghjh@163.com
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - 使用说明.md
+  - 发布前检查.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - scripts
+  - outputs
+  - .bundle
+  - .jekyll-cache
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: true
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

@@ -1,0 +1,9 @@
+<div class="lab-research-grid">
+  {% for direction in site.data.lab.directions %}
+  <article class="lab-research-card">
+    {% if direction.icon %}<i class="{{ direction.icon }}" aria-hidden="true"></i>{% endif %}
+    <h3><a href="{{ '/research/' | relative_url }}#direction-{{ forloop.index }}">{{ direction.title | escape }}</a></h3>
+    {% if direction.description != empty %}<p>{{ direction.description | escape }}</p>{% endif %}
+  </article>
+  {% endfor %}
+</div>

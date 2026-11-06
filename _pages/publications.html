@@ -1,0 +1,26 @@
+---
+title: 论文成果
+permalink: /publications/
+---
+
+{% if site.data.publications.size > 0 %}
+{% assign groups = site.data.publications | group_by: 'year' | sort: 'name' | reverse %}
+{% for group in groups %}
+<h2>{{ group.name | escape }}</h2>
+<ol class="lab-publications">
+  {% for item in group.items %}
+  <li>
+    <h3>{{ item.title | escape }}</h3>
+    {% if item.authors %}<p>{{ item.authors | escape }}</p>{% endif %}
+    {% if item.venue %}<p class="lab-publication-venue">{{ item.venue | escape }}</p>{% endif %}
+    <p class="lab-publication-links">
+      {% if item.url and item.url != empty %}<a href="{{ item.url }}">原文</a>{% endif %}
+      {% if item.pdf and item.pdf != empty %}<a href="{{ item.pdf | relative_url }}">PDF</a>{% endif %}
+    </p>
+  </li>
+  {% endfor %}
+</ol>
+{% endfor %}
+{% else %}
+<p class="lab-empty">论文与成果资料整理中，后续将在这里更新。</p>
+{% endif %}

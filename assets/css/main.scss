@@ -1,0 +1,75 @@
+---
+# Jekyll compiles this file and imports the actual Minimal Mistakes theme.
+---
+
+$sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+$global-font-family: $sans-serif;
+$header-font-family: $sans-serif;
+$caption-font-family: $sans-serif;
+$primary-color: #147d83;
+$link-color: #147d83;
+$max-width: 1320px;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; }
+.masthead { border-bottom-color: #e5ecee; }
+.masthead__inner-wrap { padding-top: 0.8em; padding-bottom: 0.8em; }
+.site-logo img { max-height: 2.6rem; }
+.site-title { font-weight: 750; letter-spacing: -0.025em; }
+.site-subtitle { letter-spacing: 0.05em; font-size: 0.65em; }
+.author__avatar img { background: #fff; border-radius: 0; border: 0; padding: 0.6em; }
+.author__bio { line-height: 1.6; }
+.page__content { line-height: 1.9; }
+.page__title { letter-spacing: -0.025em; }
+.lab-kicker { color: #147d83; font-weight: 650; font-size: 0.85em; letter-spacing: 0.08em; margin-top: 0.2em; }
+.page__content .lab-lead { font-size: 1.15em; line-height: 1.8; color: #354953; margin-bottom: 1.5em; }
+.lab-actions { display: flex; flex-wrap: wrap; gap: 0.7em; margin: 1.7em 0 2.1em; }
+.lab-actions .btn { margin-bottom: 0; }
+.lab-research-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1em; margin: 1.3em 0 2em; }
+.lab-research-card { border: 1px solid #dce8e9; border-top: 3px solid #147d83; border-radius: 4px; padding: 1.3em 1em 1.1em; background: #f8fbfb; }
+.lab-research-card > i { color: #147d83; font-size: 1.4em; }
+.page__content .lab-research-card h3 { font-size: 1em; margin: 0.8em 0 0.5em; }
+.lab-research-card h3 a { color: #263c45; text-decoration: none; }
+.lab-research-card h3 a:hover { color: #147d83; }
+.page__content .lab-research-card p { font-size: 0.8em; line-height: 1.8; margin-bottom: 0; color: #53676f; }
+.lab-section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1em; border-bottom: 1px solid #e7ebed; margin: 2em 0 1em; }
+.page__content .lab-section-heading h2 { margin: 0; border-bottom: 0; padding-bottom: 0.5em; }
+.lab-section-heading > a { flex: 0 0 auto; font-size: 0.75em; text-decoration: none; }
+.page__content .lab-empty { font-size: 0.9em; color: #64767d; border-left: 3px solid #d5e6e7; padding: 0.75em 1em; margin: 1.2em 0 2em; background: #f8fafb; }
+.lab-post-list { list-style: none; padding-left: 0 !important; }
+.lab-post-list li { display: flex; gap: 1.3em; border-bottom: 1px solid #edf0f1; padding: 1em 0; margin: 0; }
+.lab-post-list time { color: #657781; font-size: 0.75em; padding-top: 0.3em; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.lab-post-list a { text-decoration: none; font-weight: 600; }
+.page__content .lab-post-excerpt { font-size: 0.8em; color: #657781; margin: 0.5em 0 0; }
+.lab-members { display: grid; gap: 1em; }
+.lab-member { display: flex; gap: 1.3em; padding: 1em 0; border-bottom: 1px solid #e7ebed; }
+.lab-member > img { width: 100px; height: 125px; object-fit: cover; align-self: start; border-radius: 3px; }
+.page__content .lab-member h3 { margin-top: 0; }
+.page__content .lab-member p { font-size: 0.85em; margin-bottom: 0.5em; }
+.lab-member-role { color: #637781; }
+.lab-project { padding-bottom: 1.3em; margin-bottom: 1.5em; border-bottom: 1px solid #e7ebed; }
+.lab-project > img { max-height: 320px; width: 100%; object-fit: cover; border-radius: 4px; }
+.lab-publications li { padding-left: 0.3em; margin-bottom: 1.8em; }
+.page__content .lab-publications h3 { margin: 0 0 0.4em; font-size: 1em; line-height: 1.6; }
+.page__content .lab-publications p { font-size: 0.85em; margin: 0.2em 0; }
+.lab-publication-venue { color: #637781; font-style: italic; }
+.lab-publication-links { display: flex; gap: 1em; }
+.lab-direction { scroll-margin-top: 1em; }
+.page__footer { background: #f3f6f7; color: #61717a; }
+
+@media (max-width: 640px) {
+  .lab-research-grid { grid-template-columns: 1fr; gap: 0.7em; }
+  .lab-research-card { padding: 1em; }
+  .page__content .lab-research-card h3 { margin-top: 0.5em; }
+  .lab-section-heading { gap: 0.5em; }
+  .lab-post-list li { gap: 0.7em; }
+  .lab-member { gap: 0.8em; }
+  .lab-member > img { width: 75px; height: 95px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

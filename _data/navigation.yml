@@ -1,0 +1,15 @@
+main:
+  - title: 实验室简介
+    url: /about/
+  - title: 研究方向
+    url: /research/
+  - title: 团队成员
+    url: /members/
+  - title: 项目实践
+    url: /projects/
+  - title: 论文成果
+    url: /publications/
+  - title: 实验室动态
+    url: /news/
+  - title: 联系我们
+    url: /contact/

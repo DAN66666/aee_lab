@@ -1,0 +1,30 @@
+---
+title: 团队成员
+permalink: /members/
+---
+
+{% if site.data.members.size > 0 %}
+{% assign groups = site.data.members | group_by: 'category' %}
+{% for group in groups %}
+{% if group.name != empty %}<h2>{{ group.name | escape }}</h2>{% endif %}
+<div class="lab-members">
+  {% for member in group.items %}
+  <article class="lab-member">
+    {% if member.image and member.image != empty %}<img src="{{ member.image | relative_url }}" alt="{{ member.name | escape }}" loading="lazy">{% endif %}
+    <div>
+      <h3>{{ member.name | escape }}</h3>
+      {% if member.role %}<p class="lab-member-role">{{ member.role | escape }}{% if member.status %} · {{ member.status | escape }}{% endif %}{% if member.graduation_year and member.graduation_year != empty %} · {{ member.graduation_year | escape }} 届{% endif %}</p>{% endif %}
+      {% if member.direction and member.direction != empty %}<p><strong>研究方向：</strong>{{ member.direction | escape }}</p>{% endif %}
+      {% if member.bio and member.bio != empty %}{{ member.bio | markdownify }}{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% endfor %}
+{% else %}
+<p class="lab-empty">团队成员资料整理中，后续将在这里介绍我们的成员。</p>
+{% endif %}
+
+<h2>关注 AEE-Lab</h2>
+<p>{{ site.data.lab.recruitment }}</p>
+<a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">联系我们</a>

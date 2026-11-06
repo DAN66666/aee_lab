@@ -1,0 +1,22 @@
+# 修改这里的公开资料后，相关页面会一起更新。
+name: AEE-Lab
+subtitle: 汽车能源电子实验室
+headline: 欢迎来到 AEE-Lab
+description: 专注单片机与嵌入式方向，在软硬件之间探索、实践与创造。
+about: |
+  AEE-Lab 是一个聚焦单片机与嵌入式方向的实验室。
+
+  这里记录我们的研究探索、项目实践与技术积累，也让每一位对嵌入式世界感兴趣的朋友，更好地认识我们。
+email: liuwenxinghjh@163.com
+address: 福州大学车辆工程实验楼
+recruitment: 欢迎对单片机与嵌入式方向感兴趣的朋友关注 AEE-Lab。具体加入方式及合作信息将后续更新。
+directions:
+  - title: 单片机
+    description: 围绕单片机开展学习、研究与实践。
+    icon: fas fa-microchip
+  - title: 嵌入式系统
+    description: 关注嵌入式方向，探索软硬件协同的可能。
+    icon: fas fa-code
+  - title: 急速快充电池
+    description: ""
+    icon: fas fa-bolt
