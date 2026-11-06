@@ -9,11 +9,5 @@
 #   status: 在读
 #   graduation_year: ""
 - name: 夏华荣
-  role: 硕士研究生
   category: 负责人
   
-- name: 刘文兴
-  role: 硕士研究生
-  category: 研究生
-  graduation_year: "2026"
-  image: /assets/images/liuwenxing.jpg
