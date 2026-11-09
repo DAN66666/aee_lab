@@ -11,3 +11,20 @@
 - name: 夏华荣
   category: 负责人
   
+- name: 刘文兴
+  role: 研究生
+  category: 研究生
+  graduation_year: "2026"
+  image: /assets/images/liuwenxing.jpg
+
+- name: 施春旭
+  role: 研究生
+  category: 研究生
+  graduation_year: "2026"
+  image: /assets/images/shichunxu.jpg
+
+- name: 纪有涛
+  role: 研究生
+  category: 研究生
+  graduation_year: "2026"
+  image: /assets/images/jiyoutao.jpg
